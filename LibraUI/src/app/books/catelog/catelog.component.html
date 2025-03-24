@@ -1,0 +1,11 @@
+
+<div class="flex flex-col w-full h-screen items-center py-16 ">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 ">
+    <div *ngFor="let book of books" class="p-5 border border-gray-300 rounded-lg shadow hover:shadow-lg shadow-gray-200">
+        <img [src]="'http://localhost:5076/' + book.coverImageUrl" alt="book image" class="w-full h-48 object-cover rounded-lg">
+            
+        <h1 class="text-md font-bold ">{{book.title}}</h1>
+        <p class="text-sm text-gray-500">{{book.author.name}}</p>
+    </div>
+    </div>
+</div>

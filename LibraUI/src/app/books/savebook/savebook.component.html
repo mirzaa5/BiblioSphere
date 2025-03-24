@@ -1,0 +1,38 @@
+<div>
+    <form [formGroup]="bookgroup" (submit)="onSaveBook()" >
+        <input type="text" formControlName="title" placeholder="title">
+        <input type="text" formControlName="isbn" placeholder="isbn">
+        <input type="text" formControlName="author" placeholder="author">
+        <select formControlName="category">
+            <option value="0">Fiction</option>
+            <option value="1">NonFiction</option>
+            <option value="2">Science</option>
+            <option value="3">History</option>
+            <option value="4">Biography</option>
+            <option value="5">Poetry</option>
+            <option value="6">Drama</option>
+            <option vlaue="7">Romance</option>
+            <option value="8">Horro</option>
+            <option value="9">Mystery</option>
+            <option value="10">Thriller</option>
+            <option valuue="11">Fantasy</option>
+        </select>
+
+        <button type="submit">Save Book</button>
+    </form>
+</div>
+
+<!-- 
+Fiction,
+    NonFiction,
+    Science,
+    History,
+    Biography,
+    Poetry,
+    Drama,
+    Romance,
+    Horror,
+    Mystery,
+    Thriller,
+    Fantasy
+*/ -->

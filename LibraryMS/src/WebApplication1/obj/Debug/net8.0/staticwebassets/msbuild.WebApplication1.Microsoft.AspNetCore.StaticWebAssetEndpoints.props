@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/WebApplication1/images/logo-png.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\logo-png.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-MbEZGx0P/tyHge8z4\u002B6x09X4UAKBagPzroVuUW8Av\u002B0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"645827"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022MbEZGx0P/tyHge8z4\u002B6x09X4UAKBagPzroVuUW8Av\u002B0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 00:35:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebApplication1/images/logo-png.rtm1hxd6lp.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\logo-png.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rtm1hxd6lp"},{"Name":"integrity","Value":"sha256-MbEZGx0P/tyHge8z4\u002B6x09X4UAKBagPzroVuUW8Av\u002B0="},{"Name":"label","Value":"_content/WebApplication1/images/logo-png.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"645827"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022MbEZGx0P/tyHge8z4\u002B6x09X4UAKBagPzroVuUW8Av\u002B0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 00:35:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebApplication1/images/thinkanggroe.1kxyrj502r.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\thinkanggroe.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1kxyrj502r"},{"Name":"integrity","Value":"sha256-YVVg7Y7Rz6dyKGDpgr8AyQ82tn557y2P7VK86Ri8WYo="},{"Name":"label","Value":"_content/WebApplication1/images/thinkanggroe.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"104164"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YVVg7Y7Rz6dyKGDpgr8AyQ82tn557y2P7VK86Ri8WYo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 03:01:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebApplication1/images/thinkanggroe.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\thinkanggroe.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YVVg7Y7Rz6dyKGDpgr8AyQ82tn557y2P7VK86Ri8WYo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"104164"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YVVg7Y7Rz6dyKGDpgr8AyQ82tn557y2P7VK86Ri8WYo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 03:01:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

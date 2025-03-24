@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "Hash": "XmoXdzka9xAZN1Qjm/CUDPv7V83+4tX2pPQNNDRpCkY=",
+  "Source": "WebApplication1",
+  "BasePath": "_content/WebApplication1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApplication1\\wwwroot",
+      "Source": "WebApplication1",
+      "ContentRoot": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\logo-png.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/logo-png#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rtm1hxd6lp",
+      "Integrity": "MbEZGx0P/tyHge8z4+6x09X4UAKBagPzroVuUW8Av+0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo-png.png"
+    },
+    {
+      "Identity": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\thinkanggroe.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/thinkanggroe#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1kxyrj502r",
+      "Integrity": "YVVg7Y7Rz6dyKGDpgr8AyQ82tn557y2P7VK86Ri8WYo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\thinkanggroe.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/logo-png.png",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\logo-png.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "645827"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MbEZGx0P/tyHge8z4+6x09X4UAKBagPzroVuUW8Av+0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 00:35:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MbEZGx0P/tyHge8z4+6x09X4UAKBagPzroVuUW8Av+0="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo-png.rtm1hxd6lp.png",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\logo-png.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "645827"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MbEZGx0P/tyHge8z4+6x09X4UAKBagPzroVuUW8Av+0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 00:35:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rtm1hxd6lp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/logo-png.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MbEZGx0P/tyHge8z4+6x09X4UAKBagPzroVuUW8Av+0="
+        }
+      ]
+    },
+    {
+      "Route": "images/thinkanggroe.1kxyrj502r.jpg",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\thinkanggroe.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104164"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YVVg7Y7Rz6dyKGDpgr8AyQ82tn557y2P7VK86Ri8WYo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 03:01:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1kxyrj502r"
+        },
+        {
+          "Name": "label",
+          "Value": "images/thinkanggroe.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YVVg7Y7Rz6dyKGDpgr8AyQ82tn557y2P7VK86Ri8WYo="
+        }
+      ]
+    },
+    {
+      "Route": "images/thinkanggroe.jpg",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\thinkanggroe.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104164"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YVVg7Y7Rz6dyKGDpgr8AyQ82tn557y2P7VK86Ri8WYo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 03:01:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YVVg7Y7Rz6dyKGDpgr8AyQ82tn557y2P7VK86Ri8WYo="
+        }
+      ]
+    }
+  ]
+}

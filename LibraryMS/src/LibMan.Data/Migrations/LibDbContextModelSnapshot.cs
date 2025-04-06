@@ -150,11 +150,11 @@ namespace LibMan.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("MemberShipId")
+                    b.Property<int?>("MemberShipId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("PhoneNumber")
-                        .HasColumnType("integer");
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("text");
 
                     b.HasIndex("MemberShipId");
 
@@ -174,9 +174,7 @@ namespace LibMan.Data.Migrations
                 {
                     b.HasOne("LibMan.Entities.Membership", "MemberShip")
                         .WithMany()
-                        .HasForeignKey("MemberShipId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("MemberShipId");
 
                     b.Navigation("MemberShip");
                 });

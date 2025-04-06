@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using libMan.Services.BookService;
+using Microsoft.Extensions.Options;
+using libMan.Services.Registration;
 
 
 //Step1 create blue print/ builder
@@ -33,6 +35,12 @@ builder.Services.AddScoped<IAdminRepositary, AdminRepositary>();
 builder.Services.AddScoped<IAuthenticationService, DefaultAuthService>(); 
 builder.Services.AddScoped<IBookRepositary, BookRepositary>();
 builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<IMemberRepository, MemberRepository>();
+builder.Services.AddScoped<IRegistrationService,RegistrationService>();
+builder.Services.AddStackExchangeRedisCache(options => {
+    options.Configuration = builder.Configuration.GetConnectionString("RedisConnection");
+
+});
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 .AddJwtBearer(options => {

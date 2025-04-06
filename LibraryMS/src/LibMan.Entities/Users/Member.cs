@@ -5,8 +5,8 @@ namespace LibMan.Entities;
 public class Member : User
 {
     [Required]
-    public string GovtId {get; set;}
-    public int PhoneNumber {get;set;}
-    public Membership MemberShip {get; set;}
+    public string? GovtId {get; set;}
+    public string? PhoneNumber {get; set;}
+    public Membership? MemberShip{get; set;}
 
 }

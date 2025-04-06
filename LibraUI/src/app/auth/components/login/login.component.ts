@@ -1,13 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output, output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AuthRequest } from '../../types/AuthRequest';
 import { HttpClient, HttpContext } from '@angular/common/http';
 import { Token } from '../../types/token';
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
+import { AuthRequest } from '../../types/authrequest';
 
 @Component({
   selector: 'app-login',
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, RouterModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
@@ -19,6 +20,8 @@ export class LoginComponent {
     password : ''
   }
 
+  errorReturned : string = '';
+
   @Output() onLogin = new EventEmitter();
   isEmpty : boolean = false;
 
@@ -26,13 +29,14 @@ export class LoginComponent {
   {
     if(sessionStorage.getItem("token"))
     {
-      this.onLogin.emit();
+      // this.onLogin.emit();
+      this.router.navigate(["/books"]);
     }
   }
   
 
 
-  constructor(private http: HttpClient)
+  constructor(private http: HttpClient, private router: Router)
   {}
 
   onSubmit()
@@ -46,12 +50,15 @@ export class LoginComponent {
 
                     sessionStorage.setItem("token", response.token)
                     sessionStorage.setItem("Expiration", response.expiration.toString())
+                    sessionStorage.setItem("isAdmin", response.isAdmin.toString())
                     alert(response.token);
-                    this.onLogin.emit();
+                    // this.onLogin.emit();
+                    this.router.navigate(["/books"]);
                 },
               (error)=>{
                   console.log(error);
-                  alert("Something went wrong");
+                  this.errorReturned = error.error
+                  
               })
   }
 

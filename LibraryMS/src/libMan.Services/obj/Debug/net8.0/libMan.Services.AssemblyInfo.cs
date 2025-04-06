@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("libMan.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2f574d8eefcf60e2106c4af838c3bc455208aa1")]
 [assembly: System.Reflection.AssemblyProductAttribute("libMan.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("libMan.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

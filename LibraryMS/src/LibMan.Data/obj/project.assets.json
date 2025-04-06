@@ -2982,11 +2982,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\Libman.Data\\LibMan.Data.csproj",
+      "projectUniqueName": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\LibMan.Data\\LibMan.Data.csproj",
       "projectName": "LibMan.Data",
-      "projectPath": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\Libman.Data\\LibMan.Data.csproj",
+      "projectPath": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\LibMan.Data\\LibMan.Data.csproj",
       "packagesPath": "C:\\Users\\mirza\\.nuget\\packages\\",
-      "outputPath": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\Libman.Data\\obj\\",
+      "outputPath": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\LibMan.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mirza\\AppData\\Roaming\\NuGet\\NuGet.Config",

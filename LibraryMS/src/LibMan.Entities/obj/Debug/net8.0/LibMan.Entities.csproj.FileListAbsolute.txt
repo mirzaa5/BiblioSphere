@@ -42,3 +42,4 @@ c:\.NET Course\LibraryMSystemFullStack\LibraryMS\src\LibMan.Entities\obj\Debug\n
 c:\.NET Course\LibraryMSystemFullStack\LibraryMS\src\LibMan.Entities\obj\Debug\net8.0\refint\LibMan.Entities.dll
 c:\.NET Course\LibraryMSystemFullStack\LibraryMS\src\LibMan.Entities\obj\Debug\net8.0\LibMan.Entities.pdb
 c:\.NET Course\LibraryMSystemFullStack\LibraryMS\src\LibMan.Entities\obj\Debug\net8.0\ref\LibMan.Entities.dll
+C:\.NET Course\LibraryMSystemFullStack\LibraryMS\src\LibMan.Entities\obj\Debug\net8.0\LibMan.Entities.sourcelink.json

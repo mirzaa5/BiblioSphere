@@ -38,6 +38,7 @@ namespace WebApplication1.Controllers
                 }
 
             catch(EmailNotFoundException)
+            
                 {
                     return NotFound("The Email Address you entered was not found!");
                 }      

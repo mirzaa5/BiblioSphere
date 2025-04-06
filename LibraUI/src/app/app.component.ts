@@ -9,7 +9,7 @@ import { TopnavComponent } from "./common/topnav/topnav.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LoginComponent, CommonModule, FormsModule, CatelogComponent, SavebookComponent, TopnavComponent],
+  imports: [RouterOutlet, CommonModule, FormsModule, TopnavComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

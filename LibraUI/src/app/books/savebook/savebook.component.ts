@@ -4,6 +4,7 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { CatelogComponent } from '../catelog/catelog.component';
 import {Book} from '../types/book'
 import { BookService } from '../services/book.service';
+import { TopnavComponent } from "../../common/topnav/topnav.component";
 
 @Component({
   selector: 'app-savebook',
@@ -12,6 +13,8 @@ import { BookService } from '../services/book.service';
   styleUrl: './savebook.component.css'
 })
 export class SavebookComponent {
+
+  coverImage : File | null= null;
 
   constructor(private bookService : BookService){}
 
@@ -43,7 +46,7 @@ export class SavebookComponent {
   }
 
   onSaveBook() {
-    alert('Saving Book');
+
   
     this.bookgroup.markAllAsTouched();
     if(this.bookgroup.invalid)
@@ -63,9 +66,40 @@ export class SavebookComponent {
     console.log("authorname");
     console.log(book.author.name);
      
-    this.bookService.addBook(book);
+    this.bookService.addBook(book, this.coverImage);
     }
+
+
+
+
+ onFileChange(event : Event)
+{
+
+      //set event.target as an HtmlInputElement
+
+      const input = event.target as HTMLInputElement
+      console.log("checking file input")
+      //checking if inlut emelent has a file
+      if(input.files && input.files.length > 0)
+      {
+        console.log("asisinig file to coverImage")
+        this.coverImage = input.files[0];
+      }
+  
+}
+
   }
+
+
+
+
+
+
+
+
+
+
+
 
     // id : number,
     //   title : string,

@@ -66,3 +66,4 @@ c:\.NET Course\LibraryMSystemFullStack\LibraryMS\src\libMan.Services\obj\Debug\n
 c:\.NET Course\LibraryMSystemFullStack\LibraryMS\src\libMan.Services\obj\Debug\net8.0\refint\libMan.Services.dll
 c:\.NET Course\LibraryMSystemFullStack\LibraryMS\src\libMan.Services\obj\Debug\net8.0\libMan.Services.pdb
 c:\.NET Course\LibraryMSystemFullStack\LibraryMS\src\libMan.Services\obj\Debug\net8.0\ref\libMan.Services.dll
+C:\.NET Course\LibraryMSystemFullStack\LibraryMS\src\libMan.Services\obj\Debug\net8.0\libMan.Services.sourcelink.json

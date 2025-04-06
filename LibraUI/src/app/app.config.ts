@@ -8,5 +8,7 @@ import { tokenInterceptor } from './interceptors/token.interceptor';
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), 
     provideHttpClient( 
-      withInterceptors([tokenInterceptor]))]
+      withInterceptors([tokenInterceptor])),
+    provideRouter(routes)
+    ]
 };

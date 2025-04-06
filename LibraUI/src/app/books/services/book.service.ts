@@ -28,9 +28,30 @@ export class BookService {
               return this.books
   }
 
-  addBook(book:Book)
+  addBook(book:Book, coverImage: File |null)
   {
-    this.http.post<Book>("http://localhost:5076/api/books", book)
+
+      console.log("Add Book method called");
+    let formData = new FormData();
+    formData.append("title", book.title);
+    formData.append("isbn", book.isbn);
+    formData.append("author.name", book.author.name);
+    formData.append("category", book.category.toString());
+
+
+
+    //if user selecte cover image
+    if(coverImage)
+    {
+      console.log("add book has coverImage paramenter")
+      formData.append("coverImage", coverImage);
+    }else{
+      console.log("coverImage is not added");
+    }
+
+    console.log("Resulting form data:", formData)
+
+    this.http.post<Book>("http://localhost:5076/api/books",formData)
               .subscribe( d =>{
                 this.books.next([...this.books.getValue(), d]);
               })

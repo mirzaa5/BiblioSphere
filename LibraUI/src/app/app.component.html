@@ -1,4 +1,2 @@
 <app-topnav></app-topnav>
-<app-login *ngIf="!isAuth" (onLogin)="onAuth()"></app-login>
-<app-savebook *ngIf="isAuth"></app-savebook>
-<app-catelog *ngIf="isAuth"></app-catelog>
+<router-outlet></router-outlet>

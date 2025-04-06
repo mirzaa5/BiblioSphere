@@ -476,3 +476,4 @@ c:\.NET Course\LibraryMSystemFullStack\LibraryMS\tests\LibManRepoTests\obj\Debug
 c:\.NET Course\LibraryMSystemFullStack\LibraryMS\tests\LibManRepoTests\obj\Debug\net8.0\ref\LibManRepoTests.dll
 C:\.NET Course\LibraryMSystemFullStack\LibraryMS\tests\LibManRepoTests\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Abstractions.dll
 C:\.NET Course\LibraryMSystemFullStack\LibraryMS\tests\LibManRepoTests\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Features.dll
+c:\.NET Course\LibraryMSystemFullStack\LibraryMS\tests\LibManRepoTests\obj\Debug\net8.0\LibManRepoTests.sourcelink.json

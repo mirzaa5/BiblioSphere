@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XmoXdzka9xAZN1Qjm/CUDPv7V83+4tX2pPQNNDRpCkY=",
+  "Hash": "cWZ51IOcGa0k/u8I34c2onblpA8yKHjyZi9Z+PO9iLY=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -36,6 +36,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo-png.png"
+    },
+    {
+      "Identity": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\richDpoorD.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/richDpoorD#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mzm4ab9x97",
+      "Integrity": "YnM7xXXxZjdqsMION+Fpph0sXldqDhE2wIHzgURtsZE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\richDpoorD.jpg"
     },
     {
       "Identity": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\thinkanggroe.jpg",
@@ -139,6 +160,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-MbEZGx0P/tyHge8z4+6x09X4UAKBagPzroVuUW8Av+0="
+        }
+      ]
+    },
+    {
+      "Route": "images/richDpoorD.jpg",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\richDpoorD.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YnM7xXXxZjdqsMION+Fpph0sXldqDhE2wIHzgURtsZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 17:11:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YnM7xXXxZjdqsMION+Fpph0sXldqDhE2wIHzgURtsZE="
+        }
+      ]
+    },
+    {
+      "Route": "images/richDpoorD.mzm4ab9x97.jpg",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\richDpoorD.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YnM7xXXxZjdqsMION+Fpph0sXldqDhE2wIHzgURtsZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 17:11:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mzm4ab9x97"
+        },
+        {
+          "Name": "label",
+          "Value": "images/richDpoorD.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YnM7xXXxZjdqsMION+Fpph0sXldqDhE2wIHzgURtsZE="
         }
       ]
     },

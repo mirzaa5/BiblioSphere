@@ -1,4 +1,6 @@
-﻿using System.Security.Claims;
+﻿
+
+using System.Security.Claims;
 using libMan.Services.Auth;
 using LibMan.Data;
 using LibMan.Entities;
@@ -12,37 +14,41 @@ namespace libMan.Services;
 public class DefaultAuthService : IAuthenticationService
 {
     IAdminRepositary _adminRepositary;
+    IMemberRepository _memberRepository;
 
-    public DefaultAuthService(IAdminRepositary adminRepositary)
+    public DefaultAuthService(IAdminRepositary adminRepositary, IMemberRepository memberRepository)
     {
         _adminRepositary = adminRepositary;
+        _memberRepository = memberRepository;
     }
 
-        public JwtToken Login(string email, string password)
+    public JwtToken Login(string email, string password)
     {
-        var admin = _adminRepositary.GetByEmail(email);
-
-        if(admin.Password != password)
+        User user = _adminRepositary.GetByEmail(email);
+        bool isAdmin = user != null;
+        if(user == null)
         {
-             throw new AuthenticationException();
-        };
+            user = _memberRepository.GetByEmail(email);
+        }
+        if(user == null || user.Password != password)
+        {
+            throw new AuthenticationException();
+        }
 
+        var jwtToken = GenerateJwtToken(user);
+        jwtToken.isAdmin = isAdmin;
+        return jwtToken;
         
-                var token  = GenerateJwtToken(admin);
-                 return token;
-
     }
-
-
-    private JwtToken GenerateJwtToken(Admin admin)
+        private JwtToken GenerateJwtToken(User user)
     {
         //List of claims
         var claims = new List<Claim>
         {
-            new Claim(ClaimTypes.Name, admin.Name),
-            new Claim(ClaimTypes.Email, admin.Email),
-            new Claim(ClaimTypes.Role, "Admin"),
-            new Claim(ClaimTypes.NameIdentifier, admin.Id.ToString())
+            new Claim(ClaimTypes.Name, user.Name),
+            new Claim(ClaimTypes.Email, user.Email),
+            new Claim(ClaimTypes.Role,  "User"),
+            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
         };
 
         // sginingKey

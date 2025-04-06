@@ -39,4 +39,9 @@ public class BookService : IBookService
        return  _bookRepositary.GetAll().ToList();
     }
 
+    public async Task<List<Book>> GetAllBooksAsync()
+    {
+         return await _bookRepositary.GetAllAsync();  // No need to convert it into the list, repositary is already returning it as list
+
+    }
 }

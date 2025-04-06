@@ -5,6 +5,7 @@ using LibMan.Entities;
 using libMan.Services;
 using libMan.Services.BookService;
 using Microsoft.AspNetCore.Authorization;
+using System.Threading.Tasks;
 
 
 namespace WebApplication1.Controllers
@@ -73,12 +74,20 @@ namespace WebApplication1.Controllers
             // return Ok(_bookService.GetAvailableBooksForRental().ToList());
             return Ok(BooksForRental);
         }
-
+        [AllowAnonymous]
         [HttpGet("all")]
         public IActionResult GetAllBooks()
         {
          List<Book> AllBooks = _bookService.GetAllBooks().ToList();
          return Ok(AllBooks);
+        }
+        [AllowAnonymous]
+        [HttpGet("allAsync")]
+
+        public async Task<IActionResult> GetAllBooksAsync()  //Async methods are retunred as Task
+        {
+           List<Book> AllBooks = await _bookService.GetAllBooksAsync();
+           return Ok(AllBooks);
         }
     }
 }

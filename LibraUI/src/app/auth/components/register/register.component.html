@@ -1,1 +1,145 @@
-<p>register works!</p>
+
+<!--
+  This example requires updating your template:
+
+  ```
+  <html class="h-full bg-white">
+  <body class="h-full">
+  ```
+-->
+<div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+        <img class="mx-auto h-10 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company">
+        <h2 class="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">Sign in to your account</h2>
+    
+    </div>
+    
+  
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+      <form method="post" #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)"  class="space-y-6" method="POST">
+        <div>
+            <label for="name" class="block text-sm/6 font-medium text-gray-900">Name</label>
+            <div class="mt-2">
+              <input ngModel type="text" name="name" id="name" autocomplete="name" required class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+            </div>
+        </div>
+    
+        <div>
+          <label for="email" class="block text-sm/6 font-medium text-gray-900">Email address</label>
+          <div class="mt-2">
+            <input ngModel type="email" name="email" id="email" autocomplete="email" required class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+          </div>
+        </div>
+  
+        <div>
+          <div class="flex items-center justify-between">
+            <label for="password" class="block text-sm/6 font-medium text-gray-900">Password</label>
+          </div>
+          <div class="mt-2">
+            <input ngModel type="password" name="password" id="password" autocomplete="current-password" required class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+          </div>
+        </div>
+
+        <div>
+            <label for="govtid" class="block text-sm/6 font-medium text-gray-900">Govt Id</label>
+            <div class="mt-2">
+              <input ngModel type="text" name="govtid" id="govtid" autocomplete="govtid" required class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+            </div>
+        </div>
+
+        <div>
+            <label for="phoneNumber" class="block text-sm/6 font-medium text-gray-900">Phone Number</label>
+            <div class="mt-2">
+              <input ngModel type="text" name="phoneNumber" id="phoneNumber" autocomplete="phoneNumber" required class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+            </div>
+        </div>
+    
+    
+
+  
+        <div>
+          <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div  class="flex flex-col m-8" > 
+    <form method="post" #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)" class="flex flex-col " >
+
+        <div>
+            <label for="name">User Name</label>
+            <input type="text" 
+                   id="name" 
+                   name="name" 
+                   ngModel
+                   required
+                   minlength="3"
+                   maxlength="20"
+                   class="border rounded-md border-gray-400"
+            >
+            <div *ngIf="registerForm.controls['name']?.invalid && registerForm.controls['name']?.touched"> Name is Required!</div>
+        </div>
+        <div>
+            <label for="email">User Email</label>
+            <input type="email" 
+                   id="email" 
+                   name="email" 
+                   required
+                   ngModel
+                   class="border rounded-md border-gray-400">
+        </div>
+        <div>
+
+        <div>
+            <label>Password</label>
+            <input type="password" name="password"  ngModel required
+            class="border rounded-md">
+        </div>
+        <div>
+            <label>GovtId</label>
+            <input type="text" name="govtid"  ngModel required
+            class="border rounded-md">
+        </div>
+        <div>
+            <label>Phone Nummber</label>
+            <input type="text" name="phoneNumber"  ngModel required
+            class="border rounded-md">
+        </div>
+            <button type="submit" 
+                    [disabled]="registerForm.invalid"
+                    class="bg-blue-400 text-white  border rounded-md px-5 mt-4">Register
+            </button>
+
+        </div>
+    </form>
+</div>
+
+-->

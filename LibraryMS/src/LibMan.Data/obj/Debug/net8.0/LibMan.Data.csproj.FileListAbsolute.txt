@@ -66,3 +66,4 @@ c:\.NET Course\LibraryMSystemFullStack\LibraryMS\src\LibMan.Data\obj\Debug\net8.
 c:\.NET Course\LibraryMSystemFullStack\LibraryMS\src\LibMan.Data\obj\Debug\net8.0\LibMan.Data.pdb
 c:\.NET Course\LibraryMSystemFullStack\LibraryMS\src\LibMan.Data\obj\Debug\net8.0\LibMan.Data.genruntimeconfig.cache
 c:\.NET Course\LibraryMSystemFullStack\LibraryMS\src\LibMan.Data\obj\Debug\net8.0\ref\LibMan.Data.dll
+C:\.NET Course\LibraryMSystemFullStack\LibraryMS\src\LibMan.Data\obj\Debug\net8.0\LibMan.Data.sourcelink.json

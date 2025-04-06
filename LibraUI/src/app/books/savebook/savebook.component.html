@@ -1,24 +1,46 @@
-<div>
-    <form [formGroup]="bookgroup" (submit)="onSaveBook()" >
-        <input type="text" formControlName="title" placeholder="title">
-        <input type="text" formControlName="isbn" placeholder="isbn">
-        <input type="text" formControlName="author" placeholder="author">
-        <select formControlName="category">
-            <option value="0">Fiction</option>
-            <option value="1">NonFiction</option>
-            <option value="2">Science</option>
-            <option value="3">History</option>
-            <option value="4">Biography</option>
-            <option value="5">Poetry</option>
-            <option value="6">Drama</option>
-            <option vlaue="7">Romance</option>
-            <option value="8">Horro</option>
-            <option value="9">Mystery</option>
-            <option value="10">Thriller</option>
-            <option valuue="11">Fantasy</option>
-        </select>
 
-        <button type="submit">Save Book</button>
+<div class="flex flex-col w-full h-full items-center py-16">
+    <form [formGroup]="bookgroup" (submit)="onSaveBook()" class="flex flex-col gap-4" >
+       <div class="flex flex-col gap-2"> 
+            <label for="title">Title</label>
+            <input type="text" id="title" formControlName="title"  class="border p-2 rounded-md">
+       </div>
+
+
+       <div class="flex flex-col gap-2">
+            <label for="isbn">Isbn</label>
+            <input id="isbn" type="text" formControlName="isbn"  class="border p-2 rounded-md">
+       </div>
+
+       <div class="flex flex-col gap-2">
+            <label for="author">Author</label>
+            <input id="author" type="text" formControlName="author"  class="border p-2 rounded-md">
+       </div>
+
+       <div class="flex flex-col gap-2">
+        <label for="category">category</label>
+            <select id="category" formControlName="category" class="border p-2 rounded-md">
+                <option value="0">Fiction</option>
+                <option value="1">NonFiction</option>
+                <option value="2">Science</option>
+                <option value="3">History</option>
+                <option value="4">Biography</option>
+                <option value="5">Poetry</option>
+                <option value="6">Drama</option>
+                <option vlaue="7">Romance</option>
+                <option value="8">Horro</option>
+                <option value="9">Mystery</option>
+                <option value="10">Thriller</option>
+                <option valuue="11">Fantasy</option>
+            </select>
+       </div>
+
+       <div class="flex flex-col gap-2">
+            <label for="">Cover Image</label>
+            <input type="file" (change)="onFileChange($event)"  class="border p-2 rounded-md" accept="Image">
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2  rounded-md hover:bg-blue-600">Save Book</button>
+       </div>
+
     </form>
 </div>
 

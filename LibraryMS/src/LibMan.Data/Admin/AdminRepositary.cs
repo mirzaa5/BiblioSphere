@@ -1,13 +1,17 @@
 ﻿namespace LibMan.Data;
 using LibMan.Entities;
+using Microsoft.Extensions.Logging;
 
 public class AdminRepositary : IAdminRepositary
 {
     LibDbContext _libDbContext;
+    ILogger<AdminRepositary> _logger;
 
     //constructor that takes Dbcontext as parameter for Admin Repositary
-    public AdminRepositary(LibDbContext context)
+    public AdminRepositary(LibDbContext context,
+                           ILogger<AdminRepositary> logger)
     {
+        _logger = logger;
         _libDbContext = context;
     }
 
@@ -74,16 +78,20 @@ public class AdminRepositary : IAdminRepositary
 
     //Get By Email
 
-    public Admin GetByEmail(string email)
+    public Admin? GetByEmail(string email)
     {
         var admin = _libDbContext.Admins.FirstOrDefault(a => a.Email == email);
-        if(admin == null)
-        {
-            throw new EmailNotFoundException("Admin was not Found!"); //Custome Exception "EmailNotFoundException"
-        }
+        /* if(admin == null)
+         {
+             throw new EmailNotFoundException("Admin was not Found!"); //Custome Exception "EmailNotFoundException"
+         }
+         */
         return admin;
     }
 }
+
+//NoteL We are not going to throw exception if admin is not found, the login controller -->DefauultAuthService
+// would look for member if the email  dosent mathc that of an admin!
 
 
 

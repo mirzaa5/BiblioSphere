@@ -1,12 +1,20 @@
 {
   "Files": [
     {
+      "Id": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\jscript.jpg",
+      "PackagePath": "staticwebassets\\images\\jscript.jpg"
+    },
+    {
       "Id": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\logo-png.png",
       "PackagePath": "staticwebassets\\images\\logo-png.png"
     },
     {
       "Id": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\richDpoorD.jpg",
       "PackagePath": "staticwebassets\\images\\richDpoorD.jpg"
+    },
+    {
+      "Id": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\systemdesign.jpg",
+      "PackagePath": "staticwebassets\\images\\systemdesign.jpg"
     },
     {
       "Id": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\thinkanggroe.jpg",

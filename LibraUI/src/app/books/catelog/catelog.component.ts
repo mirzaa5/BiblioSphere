@@ -8,6 +8,8 @@ import { SavebookComponent } from "../savebook/savebook.component";
 import { RouterModule } from '@angular/router';
 import { CategoryPipe } from '../common/category.pipe';
 import { CategoryHighlightDirective } from '../../customDirective/category-highlight.directive';
+import { AuthService } from '../../auth/services/auth.service';
+import { RentService } from '../../rentals/services/rent.service';
 
 
 @Component({
@@ -21,12 +23,17 @@ export class CatelogComponent {
   date = new Date;
   search : string =""
   books : Book[] = [];
+  isLoggedIn : boolean = false;
+  isAdmin  = sessionStorage.getItem(("isAdmin"));
 
-  constructor(private bookService  : BookService) { }
-
-// get( ) {
-
-// }
+  constructor(private bookService  : BookService,
+              private authService : AuthService,
+              private rentService : RentService) 
+  { 
+    this.isLoggedIn = sessionStorage.getItem("token") != null;
+    this.authService.isLoggedIn.subscribe((isLoggedIn :boolean)=>{
+      this.isLoggedIn = isLoggedIn;})
+  }
 
 ngOnInit()
 {
@@ -34,7 +41,11 @@ ngOnInit()
             .subscribe( (b : Book[]) =>{
                 this.books = b
             })
+            console.log("isAdmin", this.isAdmin);
+            alert(this.isLoggedIn);
 }
+
+
 
 //filter method
 get  BookSearch() : Book[]

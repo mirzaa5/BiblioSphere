@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LibManRepoTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2f574d8eefcf60e2106c4af838c3bc455208aa1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c4d679c2a290bc2c49cb07d0541324386f4337f")]
 [assembly: System.Reflection.AssemblyProductAttribute("LibManRepoTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LibManRepoTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

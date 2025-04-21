@@ -14,9 +14,13 @@ namespace WebApplication1.Controllers
     {
         private IAuthenticationService _authService;
 
-        public LoginController( IAuthenticationService authService)
+        private ILogger<LoginController> _logger;
+
+        public LoginController( IAuthenticationService authService,
+                                ILogger<LoginController> logger)
         {
             _authService = authService;
+            _logger = logger;
         }
 
 
@@ -25,6 +29,7 @@ namespace WebApplication1.Controllers
         public IActionResult Login([FromBody] AuthRequest request)
         {
             try{
+                    _logger.LogInformation("try Block Login Controller requesting jwt");
                     var jwtToken = _authService.Login(request.Email, request.Password);
                     if(jwtToken !=  null)
                     {
@@ -40,7 +45,8 @@ namespace WebApplication1.Controllers
             catch(EmailNotFoundException)
             
                 {
-                    return NotFound("The Email Address you entered was not found!");
+                    
+                    return NotFound("The Email address you entered was not found!");
                 }      
 
             catch(Exception ex)

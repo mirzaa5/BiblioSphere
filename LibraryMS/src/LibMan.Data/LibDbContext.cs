@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using LibMan.Entities;
+using LibMan.Entities.Rental;
 namespace LibMan.Data;
 
 public class LibDbContext : DbContext
@@ -10,6 +11,8 @@ public class LibDbContext : DbContext
     public DbSet<Author> Authors {get; set;}
     public DbSet<Book> Books {get; set;}
     public DbSet<Membership> Membership {get; set;}
+
+    public DbSet<BookRental> BookRentals {get; set;}
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=libmandb;User Id=postgres;Password=hadi");

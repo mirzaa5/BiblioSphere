@@ -12,7 +12,7 @@ namespace WebApplication1.Controllers
 {
     [Route("api/books")]
     [ApiController]
-    [Authorize(Roles = "Admin")]
+    [Authorize()]
     public class BooksController : ControllerBase
     {
         private readonly IBookService _bookService;
@@ -31,9 +31,10 @@ namespace WebApplication1.Controllers
 
 
         [HttpPost]
-        // [Authorize(Roles ="Admin")]
+        [Authorize(Roles ="Admin")]
         public  IActionResult Save([FromForm] Book book, [FromForm] IFormFile? coverImage)
         {
+            _logger.LogInformation("trying to upload booj detials");
 
             //if coverImage is present
             if( coverImage != null)

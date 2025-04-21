@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cWZ51IOcGa0k/u8I34c2onblpA8yKHjyZi9Z+PO9iLY=",
+  "Hash": "BWR0dnWz6VqpQGvwgX6JJKxYQXTpeic0D9dXG/sWTDM=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\jscript.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/jscript#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h3scb9p144",
+      "Integrity": "PZhNEPtq3Vdy6cDRwLtlH4dHFhThZgLE/KeCIFdDgnc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\jscript.jpg"
+    },
     {
       "Identity": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\logo-png.png",
       "SourceId": "WebApplication1",
@@ -59,6 +80,27 @@
       "OriginalItemSpec": "wwwroot\\images\\richDpoorD.jpg"
     },
     {
+      "Identity": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\systemdesign.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/systemdesign#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1z69d1johy",
+      "Integrity": "c3NUDG99VHnZgjgKyNe4nY39FlaRBaG8Tf2JFhfdFnI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\systemdesign.jpg"
+    },
+    {
       "Identity": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\thinkanggroe.jpg",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
@@ -81,6 +123,88 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "images/jscript.h3scb9p144.jpg",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\jscript.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24427"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PZhNEPtq3Vdy6cDRwLtlH4dHFhThZgLE/KeCIFdDgnc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 18:48:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h3scb9p144"
+        },
+        {
+          "Name": "label",
+          "Value": "images/jscript.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PZhNEPtq3Vdy6cDRwLtlH4dHFhThZgLE/KeCIFdDgnc="
+        }
+      ]
+    },
+    {
+      "Route": "images/jscript.jpg",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\jscript.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24427"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PZhNEPtq3Vdy6cDRwLtlH4dHFhThZgLE/KeCIFdDgnc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 18:48:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PZhNEPtq3Vdy6cDRwLtlH4dHFhThZgLE/KeCIFdDgnc="
+        }
+      ]
+    },
     {
       "Route": "images/logo-png.png",
       "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\logo-png.png",
@@ -186,7 +310,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 17:11:33 GMT"
+          "Value": "Sat, 19 Apr 2025 03:11:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -223,7 +347,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 17:11:33 GMT"
+          "Value": "Sat, 19 Apr 2025 03:11:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -242,6 +366,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-YnM7xXXxZjdqsMION+Fpph0sXldqDhE2wIHzgURtsZE="
+        }
+      ]
+    },
+    {
+      "Route": "images/systemdesign.1z69d1johy.jpg",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\systemdesign.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25910"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c3NUDG99VHnZgjgKyNe4nY39FlaRBaG8Tf2JFhfdFnI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 19:20:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1z69d1johy"
+        },
+        {
+          "Name": "label",
+          "Value": "images/systemdesign.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c3NUDG99VHnZgjgKyNe4nY39FlaRBaG8Tf2JFhfdFnI="
+        }
+      ]
+    },
+    {
+      "Route": "images/systemdesign.jpg",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\systemdesign.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25910"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c3NUDG99VHnZgjgKyNe4nY39FlaRBaG8Tf2JFhfdFnI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 19:20:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-c3NUDG99VHnZgjgKyNe4nY39FlaRBaG8Tf2JFhfdFnI="
         }
       ]
     },

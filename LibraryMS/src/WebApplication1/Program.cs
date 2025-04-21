@@ -8,6 +8,8 @@ using System.Text;
 using libMan.Services.BookService;
 using Microsoft.Extensions.Options;
 using libMan.Services.Registration;
+using LibMan.Data.Rentals;
+using libMan.Services.RentalService;
 
 
 //Step1 create blue print/ builder
@@ -17,6 +19,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddLogging();
 builder.Services.AddDbContext<LibDbContext>();
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddCors((options)=>
 {
@@ -36,7 +39,10 @@ builder.Services.AddScoped<IAuthenticationService, DefaultAuthService>();
 builder.Services.AddScoped<IBookRepositary, BookRepositary>();
 builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddScoped<IMemberRepository, MemberRepository>();
+builder.Services.AddScoped<IRentalRepository, RentalRepository>();
+builder.Services.AddScoped<IRentalService, RentalService>();
 builder.Services.AddScoped<IRegistrationService,RegistrationService>();
+
 builder.Services.AddStackExchangeRedisCache(options => {
     options.Configuration = builder.Configuration.GetConnectionString("RedisConnection");
 

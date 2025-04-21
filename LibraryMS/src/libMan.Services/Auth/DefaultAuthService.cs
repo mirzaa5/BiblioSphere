@@ -9,6 +9,8 @@ using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using System.Net;
 using System.Security.Authentication;
+using Microsoft.Extensions.Logging;
+using Microsoft.VisualBasic;
 namespace libMan.Services;
 
 public class DefaultAuthService : IAuthenticationService
@@ -16,22 +18,32 @@ public class DefaultAuthService : IAuthenticationService
     IAdminRepositary _adminRepositary;
     IMemberRepository _memberRepository;
 
-    public DefaultAuthService(IAdminRepositary adminRepositary, IMemberRepository memberRepository)
+    ILogger<DefaultAuthService> _logger;
+
+    public DefaultAuthService(IAdminRepositary adminRepositary, 
+                              IMemberRepository memberRepository,
+                              ILogger<DefaultAuthService> logger)
     {
+        _logger = logger;
         _adminRepositary = adminRepositary;
         _memberRepository = memberRepository;
     }
 
     public JwtToken Login(string email, string password)
     {
-        User user = _adminRepositary.GetByEmail(email);
+        User? user = _adminRepositary.GetByEmail(email);
         bool isAdmin = user != null;
+        _logger.LogInformation($"Is user admin? {isAdmin}");
         if(user == null)
         {
+;
             user = _memberRepository.GetByEmail(email);
+
+            _logger.LogInformation($"Checking user: {user.Name} {user.Email}");
         }
         if(user == null || user.Password != password)
         {
+    
             throw new AuthenticationException();
         }
 
@@ -47,7 +59,7 @@ public class DefaultAuthService : IAuthenticationService
         {
             new Claim(ClaimTypes.Name, user.Name),
             new Claim(ClaimTypes.Email, user.Email),
-            new Claim(ClaimTypes.Role,  "User"),
+            new Claim(ClaimTypes.Role, user.Email == "hadi55@gmail.com" ? "Admin" : "User"),
             new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
         };
 

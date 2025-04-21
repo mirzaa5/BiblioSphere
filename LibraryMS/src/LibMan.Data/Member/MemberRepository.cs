@@ -1,14 +1,19 @@
 using LibMan.Data;
 using LibMan.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 public class MemberRepository : IMemberRepository
 {
     LibDbContext _context;
+    ILogger<MemberRepository> _logger;
+    IAdminRepositary _adminRepository;
 
-    public MemberRepository(LibDbContext context)
+    public MemberRepository(LibDbContext context, ILogger<MemberRepository> logger, IAdminRepositary adminRepositary)
     {
         _context = context;
+        _logger = logger;
+        _adminRepository = adminRepositary;
     }
     public Member Add(Member entity)
     {
@@ -44,9 +49,16 @@ public class MemberRepository : IMemberRepository
     public Member GetById(int id)
     {
         var member = _context.Members.Find(id);
-        if(member == null)
+
+        if (member == null) //Check if user is admin
         {
-            throw new Exception("Member with this ID not found");
+            var admin = _adminRepository.GetById(id);
+            if (admin != null)
+            {
+                throw new Exception($"Member {admin.Name} with Id {id} is an Admin, Admins can not rent Books!");
+            }
+
+            throw new Exception($"Member with Id {id} not found");
         }
         return member;
     }

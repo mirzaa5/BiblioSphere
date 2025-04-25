@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Rental } from '../../members/types/rentalrecord';
 
 @Injectable({
   providedIn: 'root'
@@ -11,16 +12,16 @@ export class RentService {
   RentBook(bookId: number)
   {
     
-    this.httpClient.post("http://localhost:5076/api/rental", {BookId: +bookId});
+   return this.httpClient.post("http://localhost:5076/api/rental", {BookId: +bookId});
   }
 
   getRentalHistory()
   {
-    this.httpClient.get("http://localhost:5076/api/rental/history");
+    return this.httpClient.get<Rental[]>("http://localhost:5076/api/rental/history");
   }
 
   returnBook(rentalId : number)
   {
-    this.httpClient.put(`http://localhost:5076/api/rental/${rentalId}/return`,{});
+    return this.httpClient.put(`http://localhost:5076/api/rental/${rentalId}/return`,{});
   }
 }

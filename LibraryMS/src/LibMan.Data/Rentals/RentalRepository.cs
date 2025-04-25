@@ -38,7 +38,9 @@ public class RentalRepository : IRentalRepository
 
     public BookRental GetById(int id)
     {
-        var bookRental = _context.BookRentals?.Find(id);
+        var bookRental = _context.BookRentals?.Include(r =>  r.Book)
+                                              .Include(r =>r.Member)
+                                              .FirstOrDefault(r => r.Id == id);
         if(bookRental == null)
         {
             throw new Exception($"Book Rental with Id {id} was not Found!");

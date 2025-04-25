@@ -4,11 +4,11 @@ export interface Book{
     isbn : string,
     author : Author,
     category : number,
-    isavailable : boolean,
+    isAvailable : boolean,
     coverImageUrl? : string
 }
 
 export interface Author {
     id: number,
-    name : string
+    name: string
 }

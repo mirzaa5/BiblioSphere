@@ -72,7 +72,7 @@ export class SavebookComponent {
       isbn : this.isbn.value,
       author : {name: this.author.value , id : 0},
       category: +this.category.value, // this has to be turned from value ="1" string to number 1
-      isavailable : true
+      isAvailable : true
 
     }
     console.log("authorname");

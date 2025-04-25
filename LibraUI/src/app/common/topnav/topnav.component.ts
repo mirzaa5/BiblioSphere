@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './topnav.component.css'
 })
 export class TopnavComponent {
-
+  hideMenu = false;
   isLoggedIn : boolean = false;
   isAdmin = sessionStorage.getItem("isAdmin");
   
@@ -21,7 +21,7 @@ export class TopnavComponent {
     console.log(this.isLoggedIn);
     this.authService.isLoggedIn.subscribe((isLoggedIn:boolean)=>{
         this.isLoggedIn = isLoggedIn;
-        console.log(this.isAdmin);
+        
 
     });
   }
@@ -34,5 +34,6 @@ export class TopnavComponent {
   ngOnInit()
   {
     console.log("Top nac component, is Admin : ", this.isAdmin);
+    console.log("Hide menu is ", this.hideMenu)
   }
 }

@@ -90,5 +90,20 @@ namespace WebApplication1.Controllers
            List<Book> AllBooks = await _bookService.GetAllBooksAsync();
            return Ok(AllBooks);
         }
+
+        [HttpGet("{bookId}")]
+
+        public IActionResult GetBookById(int bookId)
+        {
+            try
+            {
+                var book = _bookService.GetBookById(bookId);
+                return Ok(book);
+            }
+            catch(Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
     }
 }

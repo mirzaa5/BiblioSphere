@@ -45,8 +45,17 @@ namespace WebApplication1.Controllers
         [HttpPut("{rentalId}/return")]
         public IActionResult ReturnBook(int rentalId)
         {
+            try
+            {
+                
             var rental =_rentalService.ReturnBook(rentalId);
             return Ok(rental);
+            }
+
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
     }

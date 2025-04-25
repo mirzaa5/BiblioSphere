@@ -14,9 +14,9 @@ export const routes: Routes = [
     {path:'login', component:LoginComponent},
     {path: 'books', component:CatelogComponent, canActivate:[authGuard]},
     {path: 'books/savebook', component:SavebookComponent, canActivate:[authGuard, checkAdminGuard]},
-    {path: 'books.borrow/:id', component: NewrentalComponent, canActivate:[authGuard]},
+    {path: 'books/rent/:id', component: NewrentalComponent, canActivate:[authGuard]},
     {path: 'register', component:RegisterComponent},
     {path: '', component:HomeComponent},
-    {path: 'admin', component:AdmindashboardComponent},
-    {path: 'myaccount', component:MyaccountComponent}
+    {path: 'admin', component:AdmindashboardComponent, canActivate:[authGuard, checkAdminGuard]},
+    {path: 'myaccount', component:MyaccountComponent, canActivate: [authGuard]}
 ];

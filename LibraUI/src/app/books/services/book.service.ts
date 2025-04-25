@@ -31,14 +31,12 @@ export class BookService {
   addBook(book:Book, coverImage: File |null)
   {
 
-      console.log("Add Book method called");
+    console.log("Add Book method called");
     let formData = new FormData();
     formData.append("title", book.title);
     formData.append("isbn", book.isbn);
     formData.append("author.name", book.author.name);
     formData.append("category", book.category.toString());
-
-
 
     //if user selecte cover image
     if(coverImage)
@@ -57,7 +55,12 @@ export class BookService {
               })
   }
 
-  
+  getBookById(bookId : number) : Observable<Book>
+  {
+      var response = this.http.get<Book>("http://localhost:5076/api/books/"+bookId)
+      console.log("Get request response", response);
+      return response
+  }
 
   }
 

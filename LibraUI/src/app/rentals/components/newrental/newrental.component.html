@@ -1,1 +1,27 @@
-<p>newrental works!</p>
+<div class="flfex lfex-col w-full h-full items-center py-16">
+    <div class=" grid grid-cols-2 gap-x-16" *ngIf="book">
+        <div class="col-span-1 h-max ">
+            <img [src]="'http://localhost:5076/' +book.coverImageUrl" alt="book image" class="w-72 h-full object-cover rounded-lg">
+        </div>
+        <div class="col-span-1">
+            <h1 class="text-lg font-bold" appCategoryHighlight >{{book.title}} </h1>
+            <p class="text-sm text-gray-500">{{book.author?.name}}</p>
+            <p class="text-sm text-gray-500"> {{book.category | category}}</p>
+            <p class="text-sm text-gray-500">{{book.isbn}}</p>
+        
+            @if(book.isAvailable)
+            {
+                <div class="mt-4">
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded-md" (click)="onRentBook()">Borrow</button>
+                </div>
+            }
+            @else if (!book.isAvailable)
+            {
+                <div class="mt-4">
+                    <button class="text-red-500 font bold" > Book is currently not available!</button>
+                </div>
+            
+            }
+        </div>
+    </div>
+</div>

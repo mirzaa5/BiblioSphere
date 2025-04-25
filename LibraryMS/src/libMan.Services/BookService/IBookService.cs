@@ -13,5 +13,7 @@ public interface IBookService
 
      List<Book> GetAllBooks();
 
+     Book GetBookById(int id);
+
      Task<List<Book>> GetAllBooksAsync();
 }

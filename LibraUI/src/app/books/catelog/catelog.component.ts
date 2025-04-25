@@ -42,7 +42,7 @@ ngOnInit()
                 this.books = b
             })
             console.log("isAdmin", this.isAdmin);
-            alert(this.isLoggedIn);
+        
 }
 
 

@@ -44,4 +44,9 @@ public class BookService : IBookService
          return await _bookRepositary.GetAllAsync();  // No need to convert it into the list, repositary is already returning it as list
 
     }
+
+    public Book GetBookById(int id)
+    {
+        return _bookRepositary.GetById(id);
+    }
 }

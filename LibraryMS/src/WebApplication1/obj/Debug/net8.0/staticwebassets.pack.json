@@ -1,8 +1,24 @@
 {
   "Files": [
     {
+      "Id": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\7habits].webp",
+      "PackagePath": "staticwebassets\\images\\7habits].webp"
+    },
+    {
+      "Id": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\Dad's+Little+Book+Of+Wisdom+Cover+Design+Raab+&+Co+self-publishing.jpeg",
+      "PackagePath": "staticwebassets\\images\\Dad's+Little+Book+Of+Wisdom+Cover+Design+Raab+&+Co+self-publishing.jpeg"
+    },
+    {
+      "Id": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\greatgatsby.jpeg",
+      "PackagePath": "staticwebassets\\images\\greatgatsby.jpeg"
+    },
+    {
       "Id": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\jscript.jpg",
       "PackagePath": "staticwebassets\\images\\jscript.jpg"
+    },
+    {
+      "Id": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\laws of power.webp",
+      "PackagePath": "staticwebassets\\images\\laws of power.webp"
     },
     {
       "Id": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\logo-png.png",

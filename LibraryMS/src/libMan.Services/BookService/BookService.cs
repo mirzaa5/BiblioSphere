@@ -49,4 +49,18 @@ public class BookService : IBookService
     {
         return _bookRepositary.GetById(id);
     }
+
+    public Book Delete(int id)
+    {
+        var book = _bookRepositary.GetById(id);
+        try{
+            return _bookRepositary.Delete(book);
+        }
+        
+        catch(Exception)
+        {
+            throw new Exception("Book with this Id was not found!");
+        }  
+
+    }  
 }

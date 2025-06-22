@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BWR0dnWz6VqpQGvwgX6JJKxYQXTpeic0D9dXG/sWTDM=",
+  "Hash": "YpO7U1ZlqDwqSww0ujKX0bQ071cnhhipghgoEV6ldnw=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -16,6 +16,69 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\7habits].webp",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/7habits]#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dz8cyzsm4d",
+      "Integrity": "ecabtWx88x1aWP6BUYx2GJ9kiB9G9Pnlsoc1skQSiKg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\7habits].webp"
+    },
+    {
+      "Identity": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\Dad's+Little+Book+Of+Wisdom+Cover+Design+Raab+&+Co+self-publishing.jpeg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/Dad's+Little+Book+Of+Wisdom+Cover+Design+Raab+&+Co+self-publishing#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g65kycfke8",
+      "Integrity": "OFkyUGrAlm1OcBcWNKmAHz29he00byyVMj84nWVkqmE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Dad's+Little+Book+Of+Wisdom+Cover+Design+Raab+&+Co+self-publishing.jpeg"
+    },
+    {
+      "Identity": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\greatgatsby.jpeg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/greatgatsby#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fxc4bblvwc",
+      "Integrity": "jd6nmrxR28iuX2CXUp0dA34dzlrTxivu3VcDFGQ9m34=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\greatgatsby.jpeg"
+    },
     {
       "Identity": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\jscript.jpg",
       "SourceId": "WebApplication1",
@@ -36,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\jscript.jpg"
+    },
+    {
+      "Identity": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\laws of power.webp",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/laws of power#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bmc1ff70yg",
+      "Integrity": "I3EsgdEO7SpbhKZx6iGIv7rIICggH4/6VC3px2eNehw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\laws of power.webp"
     },
     {
       "Identity": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\logo-png.png",
@@ -124,6 +208,252 @@
   ],
   "Endpoints": [
     {
+      "Route": "images/7habits].dz8cyzsm4d.webp",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\7habits].webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5676"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ecabtWx88x1aWP6BUYx2GJ9kiB9G9Pnlsoc1skQSiKg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 16:56:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dz8cyzsm4d"
+        },
+        {
+          "Name": "label",
+          "Value": "images/7habits].webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ecabtWx88x1aWP6BUYx2GJ9kiB9G9Pnlsoc1skQSiKg="
+        }
+      ]
+    },
+    {
+      "Route": "images/7habits].webp",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\7habits].webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5676"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ecabtWx88x1aWP6BUYx2GJ9kiB9G9Pnlsoc1skQSiKg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 16:56:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ecabtWx88x1aWP6BUYx2GJ9kiB9G9Pnlsoc1skQSiKg="
+        }
+      ]
+    },
+    {
+      "Route": "images/Dad's+Little+Book+Of+Wisdom+Cover+Design+Raab+&+Co+self-publishing.g65kycfke8.jpeg",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\Dad's+Little+Book+Of+Wisdom+Cover+Design+Raab+&+Co+self-publishing.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "472327"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OFkyUGrAlm1OcBcWNKmAHz29he00byyVMj84nWVkqmE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 02:30:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g65kycfke8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Dad's+Little+Book+Of+Wisdom+Cover+Design+Raab+&+Co+self-publishing.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OFkyUGrAlm1OcBcWNKmAHz29he00byyVMj84nWVkqmE="
+        }
+      ]
+    },
+    {
+      "Route": "images/Dad's+Little+Book+Of+Wisdom+Cover+Design+Raab+&+Co+self-publishing.jpeg",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\Dad's+Little+Book+Of+Wisdom+Cover+Design+Raab+&+Co+self-publishing.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "472327"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OFkyUGrAlm1OcBcWNKmAHz29he00byyVMj84nWVkqmE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 02:30:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OFkyUGrAlm1OcBcWNKmAHz29he00byyVMj84nWVkqmE="
+        }
+      ]
+    },
+    {
+      "Route": "images/greatgatsby.fxc4bblvwc.jpeg",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\greatgatsby.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jd6nmrxR28iuX2CXUp0dA34dzlrTxivu3VcDFGQ9m34=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 15:03:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fxc4bblvwc"
+        },
+        {
+          "Name": "label",
+          "Value": "images/greatgatsby.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jd6nmrxR28iuX2CXUp0dA34dzlrTxivu3VcDFGQ9m34="
+        }
+      ]
+    },
+    {
+      "Route": "images/greatgatsby.jpeg",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\greatgatsby.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jd6nmrxR28iuX2CXUp0dA34dzlrTxivu3VcDFGQ9m34=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 15:03:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jd6nmrxR28iuX2CXUp0dA34dzlrTxivu3VcDFGQ9m34="
+        }
+      ]
+    },
+    {
       "Route": "images/jscript.h3scb9p144.jpg",
       "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\jscript.jpg",
       "Selectors": [],
@@ -202,6 +532,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-PZhNEPtq3Vdy6cDRwLtlH4dHFhThZgLE/KeCIFdDgnc="
+        }
+      ]
+    },
+    {
+      "Route": "images/laws of power.bmc1ff70yg.webp",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\laws of power.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I3EsgdEO7SpbhKZx6iGIv7rIICggH4/6VC3px2eNehw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 15:13:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bmc1ff70yg"
+        },
+        {
+          "Name": "label",
+          "Value": "images/laws of power.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I3EsgdEO7SpbhKZx6iGIv7rIICggH4/6VC3px2eNehw="
+        }
+      ]
+    },
+    {
+      "Route": "images/laws of power.webp",
+      "AssetFile": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\WebApplication1\\wwwroot\\images\\laws of power.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I3EsgdEO7SpbhKZx6iGIv7rIICggH4/6VC3px2eNehw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 15:13:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-I3EsgdEO7SpbhKZx6iGIv7rIICggH4/6VC3px2eNehw="
         }
       ]
     },

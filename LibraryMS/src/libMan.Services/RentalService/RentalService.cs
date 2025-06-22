@@ -119,4 +119,14 @@ public class RentalService : IRentalService
         
         
     }
+
+    public List<BookRental> GetAllRentals()
+    {
+        var rentals = _rentalRepository.GetAll();
+        if(rentals == null)
+        {
+            throw new Exception("No rentals found");
+        }
+        return rentals;
+    }
 }

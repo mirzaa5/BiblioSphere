@@ -24,4 +24,9 @@ export class RentService {
   {
     return this.httpClient.put(`http://localhost:5076/api/rental/${rentalId}/return`,{});
   }
+
+  getAllRentalHistory()
+  {
+    return this.httpClient.get<Rental[]>("http://localhost:5076/api/rental/all");
+  }
 }

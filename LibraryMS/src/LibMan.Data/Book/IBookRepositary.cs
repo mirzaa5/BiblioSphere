@@ -6,4 +6,6 @@ public interface IBookRepositary : IRepositary<Book>
 {
     Task<List<Book>> GetAllAsync();
 
+    
+
 }

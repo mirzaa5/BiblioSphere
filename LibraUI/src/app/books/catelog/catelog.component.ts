@@ -5,7 +5,7 @@ import { Book } from '../types/book';
 import { HttpClient } from '@angular/common/http';
 import { BookService } from '../services/book.service';
 import { SavebookComponent } from "../savebook/savebook.component";
-import { RouterModule } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { CategoryPipe } from '../common/category.pipe';
 import { CategoryHighlightDirective } from '../../customDirective/category-highlight.directive';
 import { AuthService } from '../../auth/services/auth.service';
@@ -25,10 +25,15 @@ export class CatelogComponent {
   books : Book[] = [];
   isLoggedIn : boolean = false;
   isAdmin  = sessionStorage.getItem(("isAdmin"));
+  showPopup : boolean = false;
+
+  isAdminRoute : Boolean = false;
+
 
   constructor(private bookService  : BookService,
               private authService : AuthService,
-              private rentService : RentService) 
+              private rentService : RentService,
+            private route : ActivatedRoute) 
   { 
     this.isLoggedIn = sessionStorage.getItem("token") != null;
     this.authService.isLoggedIn.subscribe((isLoggedIn :boolean)=>{
@@ -42,7 +47,9 @@ ngOnInit()
                 this.books = b
             })
             console.log("isAdmin", this.isAdmin);
-        
+      
+    this.isAdminRoute = this.route.snapshot.url.some(segment => segment.path === 'admin')
+    console.log("isAdminRoute", this.isAdminRoute);
 }
 
 
@@ -53,6 +60,10 @@ get  BookSearch() : Book[]
   return this.books.filter(b => b.title.toLowerCase().includes(this.search.toLowerCase()) 
   || b.author.name.toLowerCase().includes(this.search.toLowerCase()) );
 }
+
+//Delete Book method
+
+// onDeleteBook()
 
 
 }

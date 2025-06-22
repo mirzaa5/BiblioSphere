@@ -88,10 +88,19 @@
               class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
           </div>
           <div class="py-6">
+            @if(!isLoggedIn)
+            {
             <a class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
               [routerLink]="['/login']">Log in</a>
             <a class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
               [routerLink]="['/register']">Register</a>
+            }  else{
+              
+            <a class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+            [routerLink]="['/login']">Log in</a>
+          <a class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+            [routerLink]="['/register']">Register</a>
+            }
           </div>
         </div>
       </div>

@@ -1,0 +1,27 @@
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg bg-white">
+    <div>
+        <h1 class="text-3xl font-bold mb-6 text-gray-800">Rental Records</h1>
+    </div>
+    <table class="w-full text-sm text-left text-gray-700 border border-gray-300">
+        <thead class="text-xs text-gray-600 uppercase bg-gray-100">
+            <tr>
+                <th scope="col" class="px-6 py-3">Book Title</th>
+                <th scope="col" class="px-6 py-3">Rental Id</th>
+                <th scope="col" class="px-6 py-3">Member</th>
+                <th scope="col" class="px-6 py-3">Rental Date</th>
+                <th scope="col" class="px-6 py-3">Return Date</th>
+                <th scope="col" class="px-6 py-3">Actual Return Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let rental of rentalHistory" class="odd:bg-gray-50 even:bg-white border-b border-gray-200">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-800">{{rental.book.title}}</th>
+                <td class="px-6 py-4">{{rental.id}}</td>
+                <td class="px-6 py-4">{{rental.member.name}}</td>
+                <td class="px-6 py-4">{{rental.rentalDate | date:'dd/MM/yyyy'}}</td>
+                <td class="px-6 py-4">{{rental.returnDate | date:'dd/MM/yyyy'}}</td>
+                <td class="px-6 py-4">{{rental.actualReturnDate | date: 'dd/MM/yyyy'}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

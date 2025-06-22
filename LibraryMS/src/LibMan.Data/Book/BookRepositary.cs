@@ -24,26 +24,33 @@ public class BookRepositary : IBookRepositary
 //Clearing cache when add update or delete book repositary
     public Book Add(Book entity)
     {
-        if( _dbContext.Books.Any(b => b.Title == entity.Title && b.ISBN == entity.ISBN))
-        {
-            throw new Exception ("Book with a Similar Title or ISBN Already Exists");
-        }
+        _logger.LogInformation(entity.IsAvailable.ToString());
+        // if( _dbContext.Books.Any(b => b.Title == entity.Title || b.ISBN == entity.ISBN))
+        // {
+        //     throw new Exception ("Book with a Similar Title or ISBN Already Exists");
+        // }
+        entity.IsAvailable = true; // by default, when a book is added, it is available for rental
         _dbContext.Books.Add(entity);
+
         _dbContext.SaveChanges();
         return entity;
     }
 
     public Book Delete(Book entity)
     {
-        var book = _dbContext.Books.FirstOrDefault(b => b.Title == entity.Title);
+        _logger.LogInformation("Deleting Book from Database");
+        var book = _dbContext.Books.Find(entity.Id);
+    
+    
         if(book == null)
         {
             throw new Exception("This Book Was not found !");
         }
-        _dbContext.Books.Remove(entity);
+        _dbContext.Books.Remove(book);
         _dbContext.SaveChanges();
-        return entity;
+        return book;
 
+    
     }
 
 
@@ -74,6 +81,8 @@ public class BookRepositary : IBookRepositary
         {
             AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(30) // keeping cache for 30 Minutes
         });
+
+        
 
         return books;
     }
@@ -108,4 +117,6 @@ public class BookRepositary : IBookRepositary
         _dbContext.SaveChanges();
         return entity;;
     }
+
+    
 }

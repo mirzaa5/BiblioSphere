@@ -16,4 +16,6 @@ public interface IBookService
      Book GetBookById(int id);
 
      Task<List<Book>> GetAllBooksAsync();
+
+     Book Delete(int id);
 }

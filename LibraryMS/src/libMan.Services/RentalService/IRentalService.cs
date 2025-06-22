@@ -10,6 +10,7 @@ public interface IRentalService
     BookRental ReturnBook(int rentalId);
     List<BookRental> GetRentalHistoryByBook(int bookId);
     List<BookRental> GetRentalHistoryByMember();
+    List<BookRental> GetAllRentals();
 
 
 }

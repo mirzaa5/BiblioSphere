@@ -50,8 +50,22 @@ namespace WebApplication1.Controllers
                 
             var rental =_rentalService.ReturnBook(rentalId);
             return Ok(rental);
-            }
+            }   
 
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("all")]
+        public IActionResult ReturnAllRentals()
+        {
+            try{
+                
+            var rentals = _rentalService.GetAllRentals();
+            return Ok(rentals);
+            }
             catch(Exception ex)
             {
                 return BadRequest(ex.Message);
@@ -60,7 +74,6 @@ namespace WebApplication1.Controllers
 
     }
 }
-
 
 public class RentalRequest
 {

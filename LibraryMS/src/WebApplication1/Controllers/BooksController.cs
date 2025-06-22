@@ -34,7 +34,7 @@ namespace WebApplication1.Controllers
         [Authorize(Roles ="Admin")]
         public  IActionResult Save([FromForm] Book book, [FromForm] IFormFile? coverImage)
         {
-            _logger.LogInformation("trying to upload booj detials");
+            _logger.LogInformation("trying to upload book detials");
 
             //if coverImage is present
             if( coverImage != null)
@@ -99,6 +99,20 @@ namespace WebApplication1.Controllers
             {
                 var book = _bookService.GetBookById(bookId);
                 return Ok(book);
+            }
+            catch(Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+        [HttpDelete("{bookId}")]
+        public IActionResult DeleteBook(int bookId)
+        {
+            try
+            {
+                _bookService.Delete(bookId);
+                 return Ok("Book Deleted Successfully!");
             }
             catch(Exception ex)
             {

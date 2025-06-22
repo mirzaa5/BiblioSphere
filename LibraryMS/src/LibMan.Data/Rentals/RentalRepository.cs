@@ -33,7 +33,8 @@ public class RentalRepository : IRentalRepository
 
     public List<BookRental> GetAll()
     {
-        throw new NotImplementedException();
+        return _context.BookRentals.Include(r => r.Book)
+                                    .Include(r => r.Member).ToList();
     }
 
     public BookRental GetById(int id)

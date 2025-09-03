@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fCJcHKHzzGM=",
+  "dgSpecHash": "BTn4Vr9k4Ig=",
   "success": true,
-  "projectFilePath": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\tests\\LibManRepoTests\\LibManRepoTests.csproj",
+  "projectFilePath": "C:\\Users\\mirza\\BiblioSphere\\LibraryMS\\tests\\LibManRepoTests\\LibManRepoTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mirza\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\mirza\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",

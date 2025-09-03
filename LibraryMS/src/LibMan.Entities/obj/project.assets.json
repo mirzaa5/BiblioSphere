@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\LibMan.Entities\\LibMan.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\mirza\\BiblioSphere\\LibraryMS\\src\\LibMan.Entities\\LibMan.Entities.csproj",
       "projectName": "LibMan.Entities",
-      "projectPath": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\LibMan.Entities\\LibMan.Entities.csproj",
+      "projectPath": "C:\\Users\\mirza\\BiblioSphere\\LibraryMS\\src\\LibMan.Entities\\LibMan.Entities.csproj",
       "packagesPath": "C:\\Users\\mirza\\.nuget\\packages\\",
-      "outputPath": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\LibMan.Entities\\obj\\",
+      "outputPath": "C:\\Users\\mirza\\BiblioSphere\\LibraryMS\\src\\LibMan.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mirza\\AppData\\Roaming\\NuGet\\NuGet.Config",

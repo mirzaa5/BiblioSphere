@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lddqF9fv5lg=",
+  "dgSpecHash": "AkKUgFu1jRs=",
   "success": true,
-  "projectFilePath": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\tests\\LibManServiceTests\\LibManServiceTests.csproj",
+  "projectFilePath": "C:\\Users\\mirza\\BiblioSphere\\LibraryMS\\tests\\LibManServiceTests\\LibManServiceTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mirza\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\mirza\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

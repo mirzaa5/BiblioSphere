@@ -1144,11 +1144,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\libMan.Services\\libMan.Services.csproj",
+      "projectUniqueName": "C:\\Users\\mirza\\BiblioSphere\\LibraryMS\\src\\libMan.Services\\libMan.Services.csproj",
       "projectName": "libMan.Services",
-      "projectPath": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\libMan.Services\\libMan.Services.csproj",
+      "projectPath": "C:\\Users\\mirza\\BiblioSphere\\LibraryMS\\src\\libMan.Services\\libMan.Services.csproj",
       "packagesPath": "C:\\Users\\mirza\\.nuget\\packages\\",
-      "outputPath": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\libMan.Services\\obj\\",
+      "outputPath": "C:\\Users\\mirza\\BiblioSphere\\LibraryMS\\src\\libMan.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mirza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1166,8 +1166,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\LibMan.Data\\LibMan.Data.csproj": {
-              "projectPath": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\LibMan.Data\\LibMan.Data.csproj"
+            "C:\\Users\\mirza\\BiblioSphere\\LibraryMS\\src\\LibMan.Data\\LibMan.Data.csproj": {
+              "projectPath": "C:\\Users\\mirza\\BiblioSphere\\LibraryMS\\src\\LibMan.Data\\LibMan.Data.csproj"
             }
           }
         }

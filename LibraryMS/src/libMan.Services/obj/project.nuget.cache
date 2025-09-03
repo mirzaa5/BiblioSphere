@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fuYpdBSSQ+I=",
+  "dgSpecHash": "XVAG2QpHr1Y=",
   "success": true,
-  "projectFilePath": "C:\\.NET Course\\LibraryMSystemFullStack\\LibraryMS\\src\\libMan.Services\\libMan.Services.csproj",
+  "projectFilePath": "C:\\Users\\mirza\\BiblioSphere\\LibraryMS\\src\\libMan.Services\\libMan.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mirza\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
     "C:\\Users\\mirza\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
